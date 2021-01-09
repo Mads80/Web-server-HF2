@@ -52,7 +52,11 @@ ServerName webster.localhost
 ```
 Luk og gem.
 
-
-
-
+Hvis siden ikke er enabled kan du gøre det med følgende kommando.
+```
 sudo a2ensite gci.conf
+```
+
+webster.local er nu oppe og køre.
+![webster-localhost](images/webster-localhost.png)
+
