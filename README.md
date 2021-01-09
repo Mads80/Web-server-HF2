@@ -11,3 +11,22 @@ sudo apt install apache2
 
 :link: Succes:
 ![ubuntu-apache](images/ubuntu-apache.png)
+
+Opret din egen side istedet for standard siden.
+
+```
+sudo mkdir /var/www/gci/
+
+cd /var/www/gci/
+nano index.html
+
+<html>
+<head>
+  <title>Webster</title>
+</head>
+<body>
+  <p>Dette er mit helt eget website!</p>
+</body>
+</html>
+```
+
