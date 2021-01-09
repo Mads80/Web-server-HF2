@@ -12,7 +12,7 @@ sudo apt install apache2
 :link: Succes:
 ![ubuntu-apache](images/ubuntu-apache.png)
 
-Opret din egen side istedet for standard siden.
+Opretter min egen side istedet for standard siden.
 
 ```
 sudo mkdir /var/www/gci/
