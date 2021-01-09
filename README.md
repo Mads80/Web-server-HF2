@@ -57,6 +57,6 @@ Hvis siden ikke er _enabled_ kan du gøre det med følgende kommando.
 sudo a2ensite gci.conf
 ```
 
-webster.local er nu oppe og køre.
+Mit nye website kan nu findes på webster.local.
 ![webster-localhost](images/webster-localhost.png)
 
