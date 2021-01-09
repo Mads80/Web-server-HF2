@@ -52,7 +52,7 @@ ServerName webster.localhost
 ```
 Luk og gem.
 
-Hvis siden ikke er enabled kan du gøre det med følgende kommando.
+Hvis siden ikke er __enabled__ kan du gøre det med følgende kommando.
 ```
 sudo a2ensite gci.conf
 ```
