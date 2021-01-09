@@ -15,10 +15,10 @@ sudo apt install apache2
 Opretter min egen side istedet for standard siden.
 
 ```
-sudo mkdir /var/www/gci/
+sudo mkdir /var/www/webster/
 
-cd /var/www/gci/
-nano index.html
+cd /var/www/webster/
+sudo nano index.html
 
 <html>
 <head>
@@ -30,3 +30,29 @@ nano index.html
 </html>
 ```
 
+Sætter VirtualHost op så man kan se mit nye website.
+
+```
+cd /etc/apache2/sites-available/
+```
+
+Tager en kopi af 000-default.conf og gemmer den som webster.conf
+```
+sudo cp 000-default.conf webster.conf
+```
+
+Åbner webster.conf
+```
+sudo nano webster.conf
+```
+Retter følgende linjer.
+```
+DocumentRoot /var/www/webster/
+ServerName webster.localhost
+```
+Luk og gem.
+
+
+
+
+sudo a2ensite gci.conf
