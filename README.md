@@ -104,3 +104,62 @@ Gå til dit website igen.
 webster.localhost/info.php
 ```
 ![info-php](images/info-php.png)
+
+### :computer: Tester database forbindelsen.
+```
+mysql
+```
+
+CREATE DATABASE example_database;
+
+
+
+CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+
+GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+
+exit
+
+mysql -u example_user -p
+
+SHOW DATABASES;
+
+Output
++--------------------+
+| Database           |
++--------------------+
+| example_database   |
+| information_schema |
++--------------------+
+2 rows in set (0.000 sec)
+
+CREATE TABLE example_database.todo_list (
+    item_id INT AUTO_INCREMENT,
+    content VARCHAR(255),
+    PRIMARY KEY(item_id)
+);
+
+INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
+INSERT INTO example_database.todo_list (content) VALUES ("My 2nd important item");
+INSERT INTO example_database.todo_list (content) VALUES ("My 3rd important item");
+INSERT INTO example_database.todo_list (content) VALUES ("My 4th important item");
+INSERT INTO example_database.todo_list (content) VALUES ("My 5th important item");
+
+SELECT * FROM example_database.todo_list;
+
+Output
++---------+--------------------------+
+| item_id | content                  |
++---------+--------------------------+
+|       1 | My first important item  |
+|       2 | My 2nd important item    |
+|       3 | My 3rd important item    |
+|       4 | and 4th one more thing   |
+|       4 | and 5th one more thing   |
++---------+--------------------------+
+4 rows in set (0.000 sec)
+
+
+
+
