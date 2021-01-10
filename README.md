@@ -82,3 +82,7 @@ sudo apt install mysql-server
  ```
  sudo mysql
  ```
+ Exit MySQL console.
+ ```
+ exit
+ ```
