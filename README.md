@@ -2,7 +2,7 @@
 
 :computer: Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
-######Lad os starte med at installere Apache2
+#### Lad os starte med at installere Apache2
  
  ```
 sudo apt update
