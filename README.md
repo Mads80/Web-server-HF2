@@ -105,6 +105,4 @@ Gå til dit website igen.
 ```
 webster.localhost/info.php
 ```
-asdfsdf
-as
 ![info-php](images/info-php.png)
