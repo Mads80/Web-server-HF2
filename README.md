@@ -95,4 +95,4 @@ Se hvilken PHP version der er installeret.
 ```
 php -v
 ```
-![php-v](images/php-v.png)
+![php-version](images/php-version.png)
