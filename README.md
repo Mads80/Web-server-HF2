@@ -74,3 +74,11 @@ UFW Status.
 sudo ufw status
 ```
 
+Installer MySQL-server.
+```
+sudo apt install mysql-server
+```
+ Start MySQL.
+ ```
+ sudo mysql
+ ```
