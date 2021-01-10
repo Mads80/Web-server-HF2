@@ -8,8 +8,6 @@ Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere
 sudo apt update
 sudo apt install apache2
 ```
-
-:link: Succes:
 ![ubuntu-apache](images/ubuntu-apache.png)
 
 Opretter min egen side istedet for standard siden.
