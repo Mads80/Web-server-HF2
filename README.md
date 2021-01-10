@@ -10,7 +10,7 @@ sudo apt install apache2
 ```
 ![ubuntu-apache](images/ubuntu-apache.png)
 
-Opretter min egen side istedet for standard siden.
+Opretter mit eget site istedet for standard siden.
 
 ```
 sudo mkdir /var/www/webster/
