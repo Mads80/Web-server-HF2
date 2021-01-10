@@ -2,7 +2,7 @@
 
 :computer: Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
-### Lad os starte med at installere Apache2:
+### :computer: Lad os starte med at installere Apache2:
  
  ```
 sudo apt update
@@ -74,7 +74,7 @@ UFW Status.
 sudo ufw status
 ```
 
-### Installer MySQL-server.
+### :computer: Installer MySQL-server.
 ```
 sudo apt install mysql-server
 ```
@@ -87,7 +87,7 @@ sudo apt install mysql-server
  exit
  ```
 
-### Installer PHP.
+### :computer: Installer PHP.
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
@@ -106,5 +106,4 @@ Gå til dit website igen.
 webster.localhost/info.php
 ```
 Resultat:
-
 ![info-php](images/info-php.png)
