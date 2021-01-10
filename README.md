@@ -106,4 +106,5 @@ Gå til dit website igen.
 webster.localhost/info.php
 ```
 Resultat:
+
 ![info-php](images/info-php.png)
