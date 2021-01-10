@@ -60,3 +60,17 @@ sudo a2ensite gci.conf
 Mit nye website kan nu findes på webster.local.
 ![webster-localhost](images/webster-localhost.png)
 
+Tillader trafik på port 80.
+```
+sudo ufw allow in "Apache"
+```
+
+Starter UFW op.
+```
+sudo ufw enable
+```
+UFW Status.
+```
+sudo ufw status
+```
+
