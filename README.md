@@ -96,3 +96,14 @@ Se hvilken PHP version der er installeret.
 php -v
 ```
 ![php-version](images/php-version.png)
+
+Test om PHP virker, opret en ny fil der hedder info.php
+```
+nano /var/www/webster/info.php
+```
+Gå til dit website igen.
+```
+webster.localhost/info.php
+```
+Resultat:
+![info-php](images/info-php.png)
