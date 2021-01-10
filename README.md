@@ -109,22 +109,27 @@ webster.localhost/info.php
 ```
 mysql
 ```
-
+Opretter database.
+```
 CREATE DATABASE example_database;
-
-
-
+```
+Opretter user.
+```
 CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
-
+```
+```
 GRANT ALL ON example_database.* TO 'example_user'@'%';
-
-
+```
+```
 exit
-
+```
+```
 mysql -u example_user -p
-
+```
+```
 SHOW DATABASES;
-
+```
+```
 Output
 +--------------------+
 | Database           |
@@ -133,19 +138,23 @@ Output
 | information_schema |
 +--------------------+
 2 rows in set (0.000 sec)
-
+```
+```
 CREATE TABLE example_database.todo_list (
     item_id INT AUTO_INCREMENT,
     content VARCHAR(255),
     PRIMARY KEY(item_id)
 );
-
+```
+```
 INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
 INSERT INTO example_database.todo_list (content) VALUES ("My 2nd important item");
 INSERT INTO example_database.todo_list (content) VALUES ("My 3rd important item");
 INSERT INTO example_database.todo_list (content) VALUES ("My 4th important item");
 INSERT INTO example_database.todo_list (content) VALUES ("My 5th important item");
+```
 
+```
 SELECT * FROM example_database.todo_list;
 
 Output
@@ -159,7 +168,7 @@ Output
 |       4 | and 5th one more thing   |
 +---------+--------------------------+
 4 rows in set (0.000 sec)
-
+```
 
 
 
