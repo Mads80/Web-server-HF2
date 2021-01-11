@@ -199,7 +199,7 @@ sudo apache2ctl configtest
 ![syntax-ok](images/syntax-ok.png)
 
 Genstart Apache endnu en gang.
-```
+```linux
 sudo systemctl restart apache2
 ```
 
