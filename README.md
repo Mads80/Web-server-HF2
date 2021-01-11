@@ -45,7 +45,7 @@ Opretter to index.html filer for de nye websites.
 </html>
 ```
 
-### :computer: Sætter VirtualHost op så man kan se mit nye website.
+### :computer: Sætter VirtualHost op.
 ```
 cd /etc/apache2/sites-available/
 ```
