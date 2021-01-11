@@ -4,7 +4,7 @@ Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere
 
 ### :computer: Lad os starte med at installere Apache2:
  
- ```
+```
 sudo apt update
 sudo apt install apache2
 ```
@@ -199,8 +199,40 @@ sudo apache2ctl configtest
 ```
 ![syntax-ok](images/syntax-ok.png)
 
+Genstart Apache endnu en gang.
+```
+sudo systemctl restart apache2
+```
 
+Download Wordpress.
+```
+cd /tmp
+curl -O https://wordpress.org/latest.tar.gz
+```
+Pak filen ud.
+```
+tar xzvf latest.tar.gz
+```
+Opret dummy .htaccess fil som Wordpress kan bruge senere.
+```
+touch /tmp/wordpress/.htaccess
+```
+Lav en kopi af wp-config-sample.php Wordpress rent faktisk kan læse.
+```
+cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
+```
+Opretter "upgrade" mappe til Wordpress for fremtide opgraderinger.
+```
+mkdir /tmp/wordpress/wp-content/upgrade
+```
+Kopier hele mappen wordpress over til vores mappe på server delen. "." betyder den også tager f.eks. .htaccess filer med.
+```
+sudo cp -a /tmp/wordpress/. /var/www/wordpress
+```
 
+Konfiguration af WordPress Directory.
+```
 
+```
 
 
