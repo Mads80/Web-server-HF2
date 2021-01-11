@@ -32,6 +32,17 @@ Opretter to index.html filer for de nye websites.
  <h1>Hej, dette er en test-side for biblioteket1's hjemmeside.</h1>
  </body>
 </html>
+
+&
+
+<html>
+ <head>
+ <title>biblioteket2.opgave</title>
+ </head>
+ <body>
+ <h1>Hej, dette er en test-side for biblioteket2's hjemmeside.</h1>
+ </body>
+</html>
 ```
 
 Sætter VirtualHost op så man kan se mit nye website.
