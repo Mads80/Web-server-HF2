@@ -60,7 +60,7 @@ sudo cp 000-default.conf biblioteket2.opgave.conf
 sudo nano biblioteket1.opgave.conf
 sudo nano biblioteket2.opgave.conf
 ```
-Retter følgende linjer i de to .conf-filer.
+Retter/tilføjer følgende linjer i de to .conf-filer.
 ```
 ServerAdmin	webmaster@localhost
 ServerName	biblioteket1.opgave
