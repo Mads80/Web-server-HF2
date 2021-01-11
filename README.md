@@ -124,6 +124,12 @@ Test om PHP virker, opret en ny fil der hedder info.php
 ```
 sudo nano /var/www/html/biblioteket2.opgave/public_html/info.php
 ```
+Indsæt følgende i info.php og gem den.
+```
+<?php
+phpinfo();
+?>
+```
 Gå til dit website igen.
 ```
 biblioteket2.opgave/info.php
