@@ -80,7 +80,7 @@ sudo a2dissite 000-default.conf
 ```
 
 Mit nye website kan nu findes på webster.local.
-![webster-localhost](images/webster-localhost.png)
+![biblioteket1-opgave](images/biblioteket1-opgave.png)
 
 Tillader trafik på port 80.
 ```
