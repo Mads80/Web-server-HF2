@@ -1,18 +1,18 @@
 ## :spider_web: Web-server-HF2
 
 # Indholdsfortegnelse:
-* [Apache](#computer-apache2)
-* [VirtualHosts](#computer-virtualhost)
-* [Ubunto Firewall (UFW)](#computer-ubunto-firewall-ufw)
-* [MySQL](#computer-mysql)
-* [PHP](#computer-php)
-* [Wordpress](#computer-wordpress)
+* [Apache](#large_blue_diamond-apache2)
+* [VirtualHosts](#large_blue_diamond-virtualhost)
+* [Ubunto Firewall (UFW)](#large_blue_diamond-ubunto-firewall-ufw)
+* [MySQL](#large_blue_diamond-mysql)
+* [PHP](#large_blue_diamond-php)
+* [Wordpress](#large_blue_diamond-wordpress)
 	* [Download](#download)
 	* [Konfiguration](#konfiguration)
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
-## :computer: Apache2
+## :large_blue_diamond: Apache2
 Lad os starte med at installere Apache2.
 ```
 sudo apt update
@@ -55,7 +55,7 @@ Opretter to index.html filer for de nye websites.
 </html>
 ```
 
-## :computer: VirtualHost
+## :large_blue_diamond: VirtualHost
 ```
 cd /etc/apache2/sites-available/
 ```
@@ -92,7 +92,7 @@ sudo a2dissite 000-default.conf
 Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
 
-## :computer: Ubunto Firewall (UFW)
+## :large_blue_diamond: Ubunto Firewall (UFW)
 Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
 Tillader trafik på port 80.
 ```
@@ -108,7 +108,7 @@ UFW Status.
 sudo ufw status
 ```
 
-## :computer: MySQL
+## :large_blue_diamond: MySQL
 ```
 sudo apt install mysql-server
 ```
@@ -121,7 +121,7 @@ sudo apt install mysql-server
  exit
  ```
 
-## :computer: PHP
+## :large_blue_diamond: PHP
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
@@ -147,7 +147,7 @@ biblioteket2.opgave/info.php
 ```
 ![info-php](images/php-info.png)
 
-## :computer: Wordpress
+## :large_blue_diamond: Wordpress
 Starter med at logge ind i MySQL.
 ```
 mysql -u root -p
