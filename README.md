@@ -1,12 +1,12 @@
 ## :spider_web: Web-server-HF2
 
 # Indholdsfortegnelse:
-1. [Apache](#computer-apache2)
-2. [VirtualHosts](#computer-virtualhost)
-3. [Ubunto Firewall (UFW)](#computer-ubunto-firewall-ufw)
-4. [MySQL](#computer-mysql)
-5. [PHP](#computer-php)
-6. [Wordpress](#computer-wordpress)
+* [Apache](#computer-apache2)
+* [VirtualHosts](#computer-virtualhost)
+* [Ubunto Firewall (UFW)](#computer-ubunto-firewall-ufw)
+* [MySQL](#computer-mysql)
+* [PHP](#computer-php)
+* [Wordpress](#computer-wordpress)
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
