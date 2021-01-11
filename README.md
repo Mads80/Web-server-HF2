@@ -287,5 +287,5 @@ define( 'DB_PASSWORD', 'password' );
 ```
 Gem og luk.
 
-Åben en webbrowser og skriv "wordpress/" i adresse-feltet og start web-installationen.
+Åben en browser og skriv "wordpress/" i adresse-feltet og start web-installationen.
 ![wordpress-install](images/wordpress-install.png)
