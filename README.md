@@ -11,7 +11,7 @@ Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere
 6.
 
 
-## :computer: Installer Apache:
+## :computer: Installer Apache
 Lad os starte med at installere Apache2.
 ```
 sudo apt update
@@ -54,7 +54,7 @@ Opretter to index.html filer for de nye websites.
 </html>
 ```
 
-### :computer: Sætter VirtualHost op.
+## :computer: VirtualHost
 ```
 cd /etc/apache2/sites-available/
 ```
@@ -91,7 +91,8 @@ sudo a2dissite 000-default.conf
 Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
 
-### :computer: Ubunto Firewall (UFW). Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
+## :computer: Ubunto Firewall (UFW)
+Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
 Tillader trafik på port 80.
 ```
 sudo ufw allow in "Apache"
@@ -106,7 +107,7 @@ UFW Status.
 sudo ufw status
 ```
 
-### :computer: Installer MySQL-server.
+## :computer: MySQL
 ```
 sudo apt install mysql-server
 ```
@@ -119,7 +120,7 @@ sudo apt install mysql-server
  exit
  ```
 
-### :computer: Installer PHP.
+## :computer: PHP
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
@@ -145,7 +146,7 @@ biblioteket2.opgave/info.php
 ```
 ![info-php](images/php-info.png)
 
-### :computer: Installerer Wordpress på serveren.
+## :computer: Wordpress
 Starter med at logge ind i MySQL.
 ```
 mysql -u root -p
