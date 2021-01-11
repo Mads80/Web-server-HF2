@@ -1,7 +1,5 @@
 # :spider_web: Web-server-HF2
 
-Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
-
 # Indholdsfortegnelse:
 1. [Apache](#computer-apache2)
 2. [VirtualHosts](#computer-virtualhost)
@@ -10,6 +8,7 @@ Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere
 5. [PHP](#computer-php)
 6. [Wordpress](#computer-wordpress)
 
+Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
 ## :computer: Apache2
 Lad os starte med at installere Apache2.
