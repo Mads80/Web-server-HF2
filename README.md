@@ -22,7 +22,7 @@ sudo nano index.html
 cd /var/www/html/biblioteket2.opgave/public_html
 sudo nano index.html
 ```
-Opret to index.html filer for dine nye websites.
+Opretter to index.html filer for de nye websites.
 ```
 <html>
  <head>
@@ -35,7 +35,6 @@ Opret to index.html filer for dine nye websites.
 ```
 
 Sætter VirtualHost op så man kan se mit nye website.
-
 ```
 cd /etc/apache2/sites-available/
 ```
