@@ -128,7 +128,7 @@ Gå til dit website igen.
 ```
 webster.localhost/info.php
 ```
-![info-php](images/info-php.png)
+![info-php](images/php-info.png)
 
 ### :computer: Tester database forbindelsen.
 ```
