@@ -136,70 +136,71 @@ biblioteket2.opgave/info.php
 ```
 ![info-php](images/php-info.png)
 
-### :computer: Tester database forbindelsen.
+### :computer: Installerer Wordpress på serveren.
+Starter med at logge ind i MySQL.
 ```
-mysql
+mysql -u root -p
 ```
-Opretter database.
+Opretter database kun til Wordpress brug.
 ```
-CREATE DATABASE example_database;
-```
-Opretter user.
-```
-CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
-```
-```
-GRANT ALL ON example_database.* TO 'example_user'@'%';
-```
-```
-exit
-```
-```
-mysql -u example_user -p
-```
-```
-SHOW DATABASES;
-```
-```
-Output
-+--------------------+
-| Database           |
-+--------------------+
-| example_database   |
-| information_schema |
-+--------------------+
-2 rows in set (0.000 sec)
-```
-```
-CREATE TABLE example_database.todo_list (
-    item_id INT AUTO_INCREMENT,
-    content VARCHAR(255),
-    PRIMARY KEY(item_id)
-);
-```
-```
-INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
-INSERT INTO example_database.todo_list (content) VALUES ("My 2nd important item");
-INSERT INTO example_database.todo_list (content) VALUES ("My 3rd important item");
-INSERT INTO example_database.todo_list (content) VALUES ("My 4th important item");
-INSERT INTO example_database.todo_list (content) VALUES ("My 5th important item");
+CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 ```
 
+Opretter brugeren "wordpressuser" med tilhørende kodeord "password".
 ```
-SELECT * FROM example_database.todo_list;
+CREATE USER 'wordpressuser'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 
-Output
-+---------+--------------------------+
-| item_id | content                  |
-+---------+--------------------------+
-|       1 | My first important item  |
-|       2 | My 2nd important item    |
-|       3 | My 3rd important item    |
-|       4 | and 4th one more thing   |
-|       4 | and 5th one more thing   |
-+---------+--------------------------+
-4 rows in set (0.000 sec)
+Giver den nyoprettede bruger adgang til databasen wordpress.
 ```
+GRANT ALL ON wordpress.* TO 'wordpressuser'@'%';
+```
+
+Til sidst.
+```
+FLUSH PRIVILEGES;
+og
+EXIT;
+```
+
+Henter og installere PHP Extensions.
+```
+sudo apt update
+sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
+```
+Genstart Apache.
+```
+sudo systemctl restart apache2
+```
+
+Opdatere Apache's .htaccess konfigurationer.
+```
+sudo nano /etc/apache2/sites-available/wordpress.conf
+```
+Indsæt følgende i VirtualHosk blokken.
+```
+<Directory /var/www/wordpress/>
+    AllowOverride All
+</Directory>
+```
+
+Aktiver Rewrite Module.
+```
+sudo a2enmod rewrite
+```
+Ovenstående gør det muligt at lave permalinks der er nemmere at læse for mennesker.
+```
+http://example.com/2012/post-name/
+http://example.com/2012/12/30/post-name
+```
+Check for syntax fejl inden vi går videre.
+```
+sudo apache2ctl configtest
+```
+![syntax-ok](images/syntax-ok.png)
+
+
+
 
 
 
