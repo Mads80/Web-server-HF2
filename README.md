@@ -122,11 +122,11 @@ php -v
 
 Test om PHP virker, opret en ny fil der hedder info.php
 ```
-nano /var/www/webster/info.php
+sudo nano /var/www/html/biblioteket2.opgave/public_html/info.php
 ```
 Gå til dit website igen.
 ```
-webster.localhost/info.php
+biblioteket2.opgave/info.php
 ```
 ![info-php](images/php-info.png)
 
