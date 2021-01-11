@@ -79,8 +79,10 @@ Deaktiver den gamle standard site.
 sudo a2dissite 000-default.conf
 ```
 
-Mit nye website kan nu findes på webster.local.
+Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
+
+### :computer: Ubunto Firewall (UFW).
 
 Tillader trafik på port 80.
 ```
