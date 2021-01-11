@@ -176,7 +176,7 @@ Opdatere Apache's .htaccess konfigurationer.
 ```
 sudo nano /etc/apache2/sites-available/wordpress.conf
 ```
-Indsæt følgende i VirtualHosk blokken.
+Indsæt følgende i VirtualHost blokken.
 ```
 <Directory /var/www/wordpress/>
     AllowOverride All
