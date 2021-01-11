@@ -10,21 +10,27 @@ sudo apt install apache2
 ```
 ![ubuntu-apache](images/ubuntu-apache.png)
 
-Opretter mit eget site istedet for standard siden.
+Opretter egne sites.
 
 ```
-sudo mkdir /var/www/webster/
+sudo mkdir -p /var/www/html/biblioteket1.opgave/public_html
+sudo mkdir -p /var/www/html/biblioteket2.opgave/public_html
 
-cd /var/www/webster/
+cd /var/www/html/biblioteket1.opgave/public_html
 sudo nano index.html
 
+cd /var/www/html/biblioteket2.opgave/public_html
+sudo nano index.html
+```
+Opret to index.html filer for dine nye websites.
+```
 <html>
-<head>
-  <title>Webster</title>
-</head>
-<body>
-  <p>Dette er mit helt eget website!</p>
-</body>
+ <head>
+ <title>biblioteket1.opgave</title>
+ </head>
+ <body>
+ <h1>Hej, dette er en test-side for biblioteket1's hjemmeside.</h1>
+ </body>
 </html>
 ```
 
@@ -33,26 +39,33 @@ Sætter VirtualHost op så man kan se mit nye website.
 ```
 cd /etc/apache2/sites-available/
 ```
-
-Tager en kopi af 000-default.conf og gemmer den som webster.conf
+Tager en kopi af 000-default.conf og gemmer den som biblioteket1.opgave.conf og biblioteket2.opgave.conf
 ```
-sudo cp 000-default.conf webster.conf
+sudo cp 000-default.conf biblioteket1.opgave.conf
+sudo cp 000-default.conf biblioteket2.opgave.conf
 ```
 
 Åbner webster.conf
 ```
-sudo nano webster.conf
+sudo nano biblioteket1.opgave.conf
 ```
 Retter følgende linjer.
 ```
-DocumentRoot /var/www/webster/
-ServerName webster.localhost
+	ServerAdmin webmaster@localhost
+	ServerName biblioteket1.opgave
+	ServerAlias www.biblioteket1.opgave
+	DocumentRoot /var/www/html/biblioteket1.opgave/public_html
 ```
 Luk og gem.
 
-Hvis siden ikke er _enabled_ kan du gøre det med følgende kommando.
+Aktiver de to nye sites.
 ```
-sudo a2ensite gci.conf
+sudo a2ensite biblioteket1.opgave.conf
+sudo a2ensite biblioteket2.opgave.conf
+```
+Deaktiver den gamle standard site.
+```
+sudo a2dissite 000-default.conf
 ```
 
 Mit nye website kan nu findes på webster.local.
