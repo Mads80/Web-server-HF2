@@ -11,7 +11,7 @@ Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere
 6.
 
 
-## :computer: Installer Apache
+## :computer: Apache2
 Lad os starte med at installere Apache2.
 ```
 sudo apt update
