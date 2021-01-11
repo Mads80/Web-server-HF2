@@ -45,7 +45,7 @@ Opretter to index.html filer for de nye websites.
 </html>
 ```
 
-Sætter VirtualHost op så man kan se mit nye website.
+### :computer: Sætter VirtualHost op så man kan se mit nye website.
 ```
 cd /etc/apache2/sites-available/
 ```
@@ -83,7 +83,6 @@ Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
 
 ### :computer: Ubunto Firewall (UFW).
-
 Tillader trafik på port 80.
 ```
 sudo ufw allow in "Apache"
