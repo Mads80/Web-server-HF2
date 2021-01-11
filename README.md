@@ -212,7 +212,7 @@ Genstart Apache endnu en gang.
 sudo systemctl restart apache2
 ```
 
-Download Wordpress.
+### Download Wordpress
 ```
 cd /tmp
 curl -O https://wordpress.org/latest.tar.gz
