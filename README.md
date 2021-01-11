@@ -2,8 +2,12 @@
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
-### :computer: Lad os starte med at installere Apache2:
- 
+# Indholdsfortegnelse:
+1. [](# :computer: Apache2:)
+
+
+### :computer: Apache2:
+Lad os starte med at installere Apache2.
 ```
 sudo apt update
 sudo apt install apache2
@@ -199,7 +203,7 @@ sudo apache2ctl configtest
 ![syntax-ok](images/syntax-ok.png)
 
 Genstart Apache endnu en gang.
-```cli
+```
 sudo systemctl restart apache2
 ```
 
