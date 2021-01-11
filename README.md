@@ -82,7 +82,7 @@ sudo a2dissite 000-default.conf
 Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
 
-### :computer: Ubunto Firewall (UFW).
+### :computer: Ubunto Firewall (UFW). Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
 Tillader trafik på port 80.
 ```
 sudo ufw allow in "Apache"
