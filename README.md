@@ -7,8 +7,8 @@
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
 * [Wordpress](#large_blue_diamond-wordpress)
-	* [Download](#-small_blue_diamond-download)
-	* [Konfiguration](#-small_blue_diamond-konfiguration)
+	* [Download](#small_blue_diamond-download)
+	* [Konfiguration](#small_blue_diamond-konfiguration)
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
