@@ -7,8 +7,8 @@
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
 * [Wordpress](#large_blue_diamond-wordpress)
-	* [Download](#download)
-	* [Konfiguration](#konfiguration)
+	* [Download](#-small_blue_diamond-download)
+	* [Konfiguration](#-small_blue_diamond-konfiguration)
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
@@ -214,7 +214,7 @@ Genstart Apache endnu en gang.
 sudo systemctl restart apache2
 ```
 
-### Download
+### :small_blue_diamond: Download
 ```
 cd /tmp
 curl -O https://wordpress.org/latest.tar.gz
@@ -240,7 +240,7 @@ Kopier hele mappen wordpress over til vores mappe på server delen. "." betyder 
 sudo cp -a /tmp/wordpress/. /var/www/wordpress
 ```
 
-### Konfiguration
+### :small_blue_diamond: Konfiguration
 Giver Apache read og write til Wordpress filerne.
 ```
 sudo chown -R www-data:www-data /var/www/wordpress
