@@ -3,12 +3,12 @@
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
 # Indholdsfortegnelse:
-1. [Installer Apache](#computer-Installer-Apache)
-2.
-3.
-4.
-5.
-6.
+1. [Apache](#computer-apache2)
+2. [VirtualHosts](#computer-virtualhost)
+3. [Ubunto Firewall (UFW)](#computer-ubunto-firewall-ufw)
+4. [MySQL](#computer-mysql)
+5. [PHP](#computer-php)
+6. [Wordpress](#computer-wordpress)
 
 
 ## :computer: Apache2
@@ -289,5 +289,3 @@ Gem og luk.
 
 Åben en webbrowser og skriv "wordpress/" i adresse-feltet og start web-installationen.
 ![wordpress-install](images/wordpress-install.png)
-
-
