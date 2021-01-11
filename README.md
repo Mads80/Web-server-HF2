@@ -165,7 +165,6 @@ EXIT;
 
 Henter og installere PHP Extensions.
 ```
-sudo apt update
 sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
 ```
 Genstart Apache.
@@ -231,8 +230,52 @@ sudo cp -a /tmp/wordpress/. /var/www/wordpress
 ```
 
 Konfiguration af WordPress Directory.
+
+Giver Apache read og write til Wordpress filerne.
+```
+sudo chown -R www-data:www-data /var/www/wordpress
+```
+Sætter rettigheder på mapper og filer.
+```
+sudo find /var/www/wordpress/ -type d -exec chmod 750 {} \;
+sudo find /var/www/wordpress/ -type f -exec chmod 640 {} \;
 ```
 
+Konfiguration af WordPress Configuration File.
+
+For at hente sikre værdier fra WordPress-hemmelige nøglegenerator, skriv:
+```
+curl -s https://api.wordpress.org/secret-key/1.1/salt/
+```
+!NEDESTÅENDE ER KUN FOR SHOW - BRUG IKKE DENNE KEY!
+```
+define('AUTH_KEY',         '1jl/vqfs<XhdXoAPz9 DO NOT COPY THESE VALUES c_j{iwqD^<+c9.k<J@4H');
+define('SECURE_AUTH_KEY',  'E2N-h2]Dcvp+aS/p7X DO NOT COPY THESE VALUES {Ka(f;rv?Pxf})CgLi-3');
+define('LOGGED_IN_KEY',    'W(50,{W^,OPB%PB<JF DO NOT COPY THESE VALUES 2;y&,2m%3]R6DUth[;88');
+define('NONCE_KEY',        'll,4UC)7ua+8<!4VM+ DO NOT COPY THESE VALUES #`DXF+[$atzM7 o^-C7g');
+define('AUTH_SALT',        'koMrurzOA+|L_lG}kf DO NOT COPY THESE VALUES  07VC*Lj*lD&?3w!BT#-');
+define('SECURE_AUTH_SALT', 'p32*p,]z%LZ+pAu:VY DO NOT COPY THESE VALUES C-?y+K0DK_+F|0h{!_xY');
+define('LOGGED_IN_SALT',   'i^/G2W7!-1H2OQ+t$3 DO NOT COPY THESE VALUES t6**bRVFSD[Hi])-qS`|');
+define('NONCE_SALT',       'Q6]U:K?j4L%Z]}h^q7 DO NOT COPY THESE VALUES 1% ^qUswWgn+6&xqHN&%');
 ```
 
+Åbner WordPress configuration filen og sætter den ny generede key ind.
+```
+sudo nano /var/www/wordpress/wp-config.php
+```
+I den samme fil sættes de sidste ting op.
+```
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress' );
+
+/** MySQL database username */
+define( 'DB_USER', 'wordpressuser' );
+
+/** MySQL database password */
+define( 'DB_PASSWORD', 'password' );
+```
+Gem og luk.
+
+Åben en webbrowser og skriv "wordpress/" i adresse-feltet og start web-installationen.
 
