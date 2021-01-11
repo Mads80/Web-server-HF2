@@ -62,10 +62,10 @@ sudo nano biblioteket2.opgave.conf
 ```
 Retter følgende linjer i de to .conf-filer.
 ```
-	ServerAdmin webmaster@localhost
-	ServerName biblioteket1.opgave
-	ServerAlias www.biblioteket1.opgave
-	DocumentRoot /var/www/html/biblioteket1.opgave/public_html
+ServerAdmin	webmaster@localhost
+ServerName	biblioteket1.opgave
+ServerAlias	www.biblioteket1.opgave
+DocumentRoot	/var/www/html/biblioteket1.opgave/public_html
 ```
 Luk og gem.
 
