@@ -3,6 +3,7 @@
 # Indholdsfortegnelse:
 * [Apache](#large_blue_diamond-apache2)
 * [VirtualHosts](#large_blue_diamond-virtualhost)
+	* [Hosts](#small_blue_diamond-hosts)
 * [Ubunto Firewall (UFW)](#large_blue_diamond-ubunto-firewall-ufw)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
@@ -91,6 +92,13 @@ sudo a2dissite 000-default.conf
 
 Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 ![biblioteket1-opgave](images/biblioteket1-opgave.png)
+
+### :small_blue_diamond: Hosts
+```
+192.168.187.128 biblioteket1.opgave
+192.168.187.128 biblioteket2.opgave
+192.168.187.128 wordpress
+```
 
 ## :large_blue_diamond: Ubunto Firewall (UFW)
 Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
