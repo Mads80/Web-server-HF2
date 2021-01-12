@@ -95,6 +95,10 @@ Mit nye website kan nu findes på biblioteket1.opgave og biblioteket2.opgave.
 
 ### :small_blue_diamond: Hosts
 ```
+sudo nano /etc/hosts
+```
+Indsætter IP og VirtualHost-navne.
+```
 192.168.187.128 biblioteket1.opgave
 192.168.187.128 biblioteket2.opgave
 192.168.187.128 wordpress
