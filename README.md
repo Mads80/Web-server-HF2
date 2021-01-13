@@ -59,7 +59,7 @@ Opretter to index.html filer for de nye websites.
 ```
 
 ### :small_blue_diamond: Ubunto Firewall (UFW)
-Opretter regel i UFW.
+Opretter regl i UFW.
 ```
 sudo ufw allow in "Apache"
 ```
@@ -125,11 +125,11 @@ Indsætter IP og VirtualHost-navne.
 
 
 ## :large_blue_diamond: SSH
-Henter og installerer OpenSSH
+Henter og installerer OpenSSH.
 ```
 sudo apt install openssh-server
 ```
-Kontroller status
+Kontroller status.
 ```
 sudo systemctl status ssh
 ```
@@ -140,6 +140,7 @@ sudo ufw allow ssh
 ![ssh-putty](images/ssh-putty.png)
 
 ## :large_blue_diamond: MySQL
+Henter og installerer MySQL.
 ```
 sudo apt install mysql-server
 ```
