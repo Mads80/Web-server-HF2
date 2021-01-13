@@ -166,16 +166,11 @@ sudo nano /etc/apache2/sites-enabled/privateparts.conf
 ```
 ```
 <VirtualHost *:80>
-	ServerAdmin webmaster@localhost
-    ServerName privateparts
-    ServerAlias www.privateparts
-	DocumentRoot /var/www/html/privateparts/public_html
-
 	<Directory "/var/www/html/privateparts/public_html">
-		**AuthType Basic**
-		**AuthName "Restricted Content"**
-    	**AuthUserFile /etc/apache2/.htpasswd**
-		**Require valid-user**
+		AuthType Basic
+		AuthName "Restricted Content"
+		AuthUserFile /etc/apache2/.htpasswd
+		Require valid-user
 	</Directory>
 </VirtualHost>
 ```
