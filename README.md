@@ -364,4 +364,4 @@ Gem og luk.
 ![wordpress-install](images/wordpress-install.png)
 
 
-[Go To TOP](##spider_web-web-server-hf2)
+[Go To TOP](#spider_web-web-server-hf2)
