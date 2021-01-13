@@ -7,7 +7,7 @@
 	* [Hosts](#small_blue_diamond-hosts)
 * [FTP](#large_blue_diamond-ftp)
 * [SSH](#large_blue_diamond-ssh)
-* [.htaccess](#large_blue_diamond-htaccess)
+* [.htaccess](#large_blue_diamond-htpasswd)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
 * [Wordpress](#large_blue_diamond-wordpress)
@@ -140,7 +140,7 @@ sudo ufw allow ssh
 ```
 ![ssh-putty](images/ssh-putty.png)
 
-## :large_blue_diamond: .htaccess
+## :large_blue_diamond: .htpasswd
 Starter med at oprette .htpasswd og tilføje brugere.
 Første gang vi bruger dette værktøj, skal vi tilføje -c indstillingen for at oprette den angivne fil.
 ```
