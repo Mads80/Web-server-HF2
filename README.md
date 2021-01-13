@@ -364,4 +364,3 @@ Gem og luk.
 ![wordpress-install](images/wordpress-install.png)
 
 [Go To TOP](#:spider_web: Web-server-HF2)
-          section_title<a name=":spider_web: Web-server-HF2"></a>  
