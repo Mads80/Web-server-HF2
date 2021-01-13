@@ -2,11 +2,11 @@
 
 # Indholdsfortegnelse:
 * [Apache](#large_blue_diamond-apache2)
+	* [Ubunto Firewall (UFW)](#small_blue_diamond-ubunto-firewall-ufw)
 * [VirtualHosts](#large_blue_diamond-virtualhost)
 	* [Hosts](#small_blue_diamond-hosts)
 * [FTP](#large_blue_diamond-ftp)
 * [SSH](#large_blue_diamond-ssh)
-* [Ubunto Firewall (UFW)](#large_blue_diamond-ubunto-firewall-ufw)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
 * [Wordpress](#large_blue_diamond-wordpress)
@@ -56,6 +56,22 @@ Opretter to index.html filer for de nye websites.
  <h1>Hej, dette er en test-side for biblioteket2's hjemmeside.</h1>
  </body>
 </html>
+```
+
+### :small_blue_diamond: Ubunto Firewall (UFW)
+Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
+Tillader trafik på port 80.
+```
+sudo ufw allow in "Apache"
+```
+
+Starter UFW op.
+```
+sudo ufw enable
+```
+UFW Status.
+```
+sudo ufw status
 ```
 
 ## :large_blue_diamond: VirtualHost
@@ -109,25 +125,20 @@ Indsætter IP og VirtualHost-navne.
 ## :large_blue_diamond: FTP
 
 
-
 ## :large_blue_diamond: SSH
-
-
-## :large_blue_diamond: Ubunto Firewall (UFW)
-Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
-Tillader trafik på port 80.
+Henter og installerer OpenSSH
 ```
-sudo ufw allow in "Apache"
+sudo apt install openssh-server
 ```
-
-Starter UFW op.
+Kontroller status
 ```
-sudo ufw enable
+sudo systemctl status ssh
 ```
-UFW Status.
+Åbner porte i UFW.
 ```
-sudo ufw status
+sudo ufw allow ssh
 ```
+![ssh-putty](images/ssh-putty.png)
 
 ## :large_blue_diamond: MySQL
 ```
