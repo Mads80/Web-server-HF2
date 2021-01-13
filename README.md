@@ -4,6 +4,8 @@
 * [Apache](#large_blue_diamond-apache2)
 * [VirtualHosts](#large_blue_diamond-virtualhost)
 	* [Hosts](#small_blue_diamond-hosts)
+* [FTP](#large_blue_diamond-ftp)
+* [SSH](#large_blue_diamond-ssh)
 * [Ubunto Firewall (UFW)](#large_blue_diamond-ubunto-firewall-ufw)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
@@ -103,6 +105,13 @@ Indsætter IP og VirtualHost-navne.
 192.168.187.128 biblioteket2.opgave
 192.168.187.128 wordpress
 ```
+
+## :large_blue_diamond: FTP
+
+
+
+## :large_blue_diamond: SSH
+
 
 ## :large_blue_diamond: Ubunto Firewall (UFW)
 Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
