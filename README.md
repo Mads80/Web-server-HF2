@@ -166,6 +166,8 @@ sudo nano /etc/apache2/sites-enabled/privateparts.conf
 ```
 ```
 <VirtualHost *:80>
+	....
+
 	<Directory "/var/www/html/privateparts/public_html">
 		AuthType Basic
 		AuthName "Restricted Content"
@@ -174,6 +176,10 @@ sudo nano /etc/apache2/sites-enabled/privateparts.conf
 	</Directory>
 </VirtualHost>
 ```
+```
+sudo service apache2 restart
+```
+![privateparts-unauthorized](images/privateparts-unauthorized.png)
 
 ## :large_blue_diamond: MySQL
 Henter og installerer MySQL.
