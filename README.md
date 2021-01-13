@@ -363,6 +363,5 @@ Gem og luk.
 Åben en browser og skriv "wordpress/" i adresse-feltet og start web-installationen.
 ![wordpress-install](images/wordpress-install.png)
 
-[Go To TOP](#:spider_web: Web-server-HF2)
 
-[Go To TOP](#TOP)
+[Go To TOP](##spider_web-web-server-hf2)
