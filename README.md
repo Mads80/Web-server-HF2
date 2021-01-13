@@ -7,6 +7,7 @@
 	* [Hosts](#small_blue_diamond-hosts)
 * [FTP](#large_blue_diamond-ftp)
 * [SSH](#large_blue_diamond-ssh)
+* [.htaccess](##large_blue_diamond-.htaccess)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
 * [Wordpress](#large_blue_diamond-wordpress)
@@ -138,6 +139,46 @@ sudo systemctl status ssh
 sudo ufw allow ssh
 ```
 ![ssh-putty](images/ssh-putty.png)
+
+## :large_blue_diamond: .htaccess
+Starter med at oprette .htpasswd og tilføje brugere.
+Første gang vi bruger dette værktøj, skal vi tilføje -c indstillingen for at oprette den angivne fil.
+```
+sudo htpasswd -c /etc/apache2/.htpasswd mads
+```
+Man vil efterfølgende blive spurgt om at angive et password. Næste bruger opretter vi uden -c indstillingen.
+```
+sudo htpasswd /etc/apache2/.htpasswd anden_bruger
+```
+Se indholdet af .htpasswd filen.
+```
+cat /etc/apache2/.htpasswd
+```
+Resultat:
+```
+mads:$apr1$ipsuwA6.$t2qJzRkIpCGljYLXenUEC.
+anden_bruger:$apr1$cqokJ/IC$XFEXtS/xbwbZNl/oAlPtO1
+```
+
+Konfiguration af adgangskontrol inden for den virtuelle værtsdefinition.
+```
+sudo nano /etc/apache2/sites-enabled/privateparts.conf
+```
+```
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+    ServerName privateparts
+    ServerAlias www.privateparts
+	DocumentRoot /var/www/html/privateparts/public_html
+
+	<Directory "/var/www/html/privateparts/public_html">
+		AuthType Basic
+		AuthName "Restricted Content"
+    	AuthUserFile /etc/apache2/.htpasswd
+		Require valid-user
+	</Directory>
+</VirtualHost>
+```
 
 ## :large_blue_diamond: MySQL
 Henter og installerer MySQL.
@@ -321,3 +362,6 @@ Gem og luk.
 
 Åben en browser og skriv "wordpress/" i adresse-feltet og start web-installationen.
 ![wordpress-install](images/wordpress-install.png)
+
+[Go To TOP](#:spider_web: Web-server-HF2)
+          section_title<a name=":spider_web: Web-server-HF2"></a>  
