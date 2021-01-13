@@ -364,3 +364,8 @@ Gem og luk.
 ![wordpress-install](images/wordpress-install.png)
 
 [Go To TOP](#:spider_web: Web-server-HF2)
+
+[text goes here](#section_name)
+          section_title<a name="section_name"></a>  
+
+          <a href="#TOP">Go To TOP</a>
