@@ -59,8 +59,7 @@ Opretter to index.html filer for de nye websites.
 ```
 
 ### :small_blue_diamond: Ubunto Firewall (UFW)
-Dette er nødvendigt hvis siden skal være tilgængelig uden for LAN.
-Tillader trafik på port 80.
+Opretter regel i UFW.
 ```
 sudo ufw allow in "Apache"
 ```
