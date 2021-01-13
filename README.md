@@ -178,8 +178,8 @@ sudo nano /etc/apache2/sites-enabled/privateparts.conf
 ```
 ```
 sudo service apache2 restart
-Resultat:
 ```
+Resultat:
 ![privateparts-unauthorized](images/privateparts-unauthorized.png)
 
 ## :large_blue_diamond: MySQL
