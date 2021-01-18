@@ -2,7 +2,9 @@
 
 :books: Biblioteket i Middelfart har bestemt at de skal have opsat en webserver.
 Webserveren skal til start bestå af domænerne “biblioteket1.opgave”, “biblioteket2.opgave”, “Wordpress” og “privateparts”.
+
 “Biblioteket1.opgave”, “biblioteket2.opgave” og “Wordpress” er til borgerne i Middelfart. Hvor “privateparts” er til bibliotekets interne del, da denne er beskyttet af et password.
+
 Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bibliotekets egen webudvikler har adgang via FTP skulle han ønske at uploade filer.
 
 # Indholdsfortegnelse:
