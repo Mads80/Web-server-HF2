@@ -156,9 +156,6 @@ sudo a2enmod headers
 sudo a2ensite default-ssl
 ```
 ```
-sudo systemctl restart apache2
-```
-```
 sudo apache2ctl configtest
 
 Syntax OK
@@ -169,6 +166,9 @@ Syntax OK
 sudo nano /etc/apache2/sites-available/biblioteket1.opgave.conf
 ```
 ![https-redirect](images/https-redirect.png)
+```
+sudo systemctl restart apache2
+```
 
 ## :large_blue_diamond: FTP
 
