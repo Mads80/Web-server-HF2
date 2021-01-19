@@ -6,6 +6,7 @@
 	* [Ubunto Firewall (UFW)](#small_blue_diamond-ubunto-firewall-ufw)
 * [VirtualHosts](#large_blue_diamond-virtualhost)
 	* [Hosts](#small_blue_diamond-hosts)
+* [HTTPS](#large_blue_diamond-https)
 * [FTP](#large_blue_diamond-ftp)
 * [SSH](#large_blue_diamond-ssh)
 * [.htpasswd](#large_blue_diamond-htpasswd)
@@ -132,6 +133,8 @@ Indsætter IP og VirtualHost-navne.
 192.168.187.128 wordpress
 192.168.187.128 privateparts
 ```
+
+## :large_blue_diamond: HTTPS
 
 ## :large_blue_diamond: FTP
 
