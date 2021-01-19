@@ -18,7 +18,7 @@
 	* [Download](#small_blue_diamond-download)
 	* [Konfiguration](#small_blue_diamond-konfiguration)
 	
-## :books: Forord
+## [:books:](#spider_web-web-server-hf2) Forord
 Biblioteket i Middelfart har bestemt at de skal have opsat en webserver.
 Webserveren skal til start bestå af domænerne “biblioteket1.opgave”, “biblioteket2.opgave”, “Wordpress” og “privateparts”.
 
@@ -29,7 +29,7 @@ Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bib
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt smartere i denne sammenhæng, da det er nemmere at vise ting lokalt. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
 
-## :large_blue_diamond: Apache2
+## [:large_blue_diamond:](#spider_web-web-server-hf2) Apache2
 Lad os starte med at installere Apache2.
 ```
 sudo apt update
@@ -88,7 +88,7 @@ sudo ufw status
 ```
 ![ufw-status](images/ufw-status.png)
 
-## :large_blue_diamond: VirtualHost
+## [:large_blue_diamond:](#spider_web-web-server-hf2) VirtualHost
 ```
 cd /etc/apache2/sites-available/
 ```
@@ -137,7 +137,7 @@ Indsætter IP og VirtualHost-navne.
 192.168.187.128 privateparts
 ```
 
-## :large_blue_diamond: HTTPS
+## [:large_blue_diamond:](#spider_web-web-server-hf2) HTTPS
 Starter med at lave backup af den originale fil.
 ```
 sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
@@ -170,10 +170,10 @@ sudo nano /etc/apache2/sites-available/biblioteket1.opgave.conf
 sudo systemctl restart apache2
 ```
 
-## :large_blue_diamond: FTP
+## [:large_blue_diamond:](#spider_web-web-server-hf2) FTP
 
 
-## :large_blue_diamond: SSH
+## [:large_blue_diamond:](#spider_web-web-server-hf2) SSH
 Henter og installerer OpenSSH.
 ```
 sudo apt install openssh-server
@@ -188,7 +188,7 @@ sudo ufw allow ssh
 ```
 ![ssh-putty](images/ssh-putty.png)
 
-## :large_blue_diamond: .htpasswd
+## [:large_blue_diamond:](#spider_web-web-server-hf2) .htpasswd
 Starter med at oprette .htpasswd og tilføje brugere.
 Første gang vi bruger dette værktøj, skal vi tilføje -c indstillingen for at oprette den angivne fil.
 ```
@@ -229,7 +229,7 @@ sudo service apache2 restart
 ```
 ![privateparts-unauthorized](images/privateparts-unauthorized.png)
 
-## :large_blue_diamond: MySQL
+## [:large_blue_diamond:](#spider_web-web-server-hf2) MySQL
 Henter og installerer MySQL.
 ```
 sudo apt install mysql-server
@@ -243,10 +243,10 @@ sudo apt install mysql-server
  exit
  ```
 
-## :large_blue_diamond: CGI
+## [:large_blue_diamond:](#spider_web-web-server-hf2) CGI
 
 
-## :large_blue_diamond: PHP
+## [:large_blue_diamond:](#spider_web-web-server-hf2) PHP
 ```
 sudo apt install php libapache2-mod-php php-mysql
 ```
