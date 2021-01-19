@@ -1,13 +1,7 @@
 ## :spider_web: Web-server-HF2
 
-:books: Biblioteket i Middelfart har bestemt at de skal have opsat en webserver.
-Webserveren skal til start bestå af domænerne “biblioteket1.opgave”, “biblioteket2.opgave”, “Wordpress” og “privateparts”.
-
-“Biblioteket1.opgave”, “biblioteket2.opgave” og “Wordpress” er til borgerne i Middelfart. Hvor “privateparts” er til bibliotekets interne del, da denne er beskyttet af et password.
-
-Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bibliotekets egne webudvikler har adgang via FTP skulle han ønske at uploade filer.
-
 # Indholdsfortegnelse:
+* [Forord](#books-forord)
 * [Apache](#large_blue_diamond-apache2)
 	* [Ubunto Firewall (UFW)](#small_blue_diamond-ubunto-firewall-ufw)
 * [VirtualHosts](#large_blue_diamond-virtualhost)
@@ -20,8 +14,17 @@ Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bib
 * [Wordpress](#large_blue_diamond-wordpress)
 	* [Download](#small_blue_diamond-download)
 	* [Konfiguration](#small_blue_diamond-konfiguration)
+	
+## :books: Forord
+Biblioteket i Middelfart har bestemt at de skal have opsat en webserver.
+Webserveren skal til start bestå af domænerne “biblioteket1.opgave”, “biblioteket2.opgave”, “Wordpress” og “privateparts”.
+
+“Biblioteket1.opgave”, “biblioteket2.opgave” og “Wordpress” er til borgerne i Middelfart. Hvor “privateparts” er til bibliotekets interne del, da denne er beskyttet af et password.
+
+Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bibliotekets egne webudvikler har adgang via FTP skulle han ønske at uploade filer.
 
 Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
+
 
 ## :large_blue_diamond: Apache2
 Lad os starte med at installere Apache2.
