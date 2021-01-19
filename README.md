@@ -146,11 +146,6 @@ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-availab
 sudo nano /etc/apache2/sites-available/default-ssl.conf
 ```
 ![https-default](images/https-default.png)
-### :small_blue_diamond: Redirect
-```
-sudo nano /etc/apache2/sites-available/biblioteket1.opgave.conf
-```
-![https-redirect](images/https-redirect.png)
 Aktivering af ændringer i Apache
 ```
 sudo a2enmod ssl
@@ -167,6 +162,12 @@ sudo apache2ctl configtest
 
 Syntax OK
 ```
+
+### :small_blue_diamond: Redirect
+```
+sudo nano /etc/apache2/sites-available/biblioteket1.opgave.conf
+```
+![https-redirect](images/https-redirect.png)
 
 ## :large_blue_diamond: FTP
 
