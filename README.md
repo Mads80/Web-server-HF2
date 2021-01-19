@@ -130,6 +130,7 @@ Indsætter IP og VirtualHost-navne.
 192.168.187.128 biblioteket1.opgave
 192.168.187.128 biblioteket2.opgave
 192.168.187.128 wordpress
+192.168.187.128 privateparts
 ```
 
 ## :large_blue_diamond: FTP
