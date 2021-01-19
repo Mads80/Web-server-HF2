@@ -85,6 +85,7 @@ UFW Status.
 ```
 sudo ufw status
 ```
+![ufw-status](images/ufw-status.png)
 
 ## :large_blue_diamond: VirtualHost
 ```
