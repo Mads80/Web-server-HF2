@@ -7,6 +7,7 @@
 * [VirtualHosts](#large_blue_diamond-virtualhost)
 	* [Hosts](#small_blue_diamond-hosts)
 * [HTTPS](#large_blue_diamond-https)
+	* [Redirect](#small_blue_diamond-redirect)
 * [FTP](#large_blue_diamond-ftp)
 * [SSH](#large_blue_diamond-ssh)
 * [.htpasswd](#large_blue_diamond-htpasswd)
@@ -72,11 +73,11 @@ Opretter to index.html filer for de nye websites.
 ```
 
 ### :small_blue_diamond: Ubunto Firewall (UFW)
-Opretter regl i UFW.
+Giver adgang for HTTPS-trafik, og tillader profilen "Apache fuld". Derefter slettes den overflødige "Apache" -profil
 ```
-sudo ufw allow in "Apache"
+sudo ufw allow 'Apache Full'
+sudo ufw delete allow 'Apache'
 ```
-
 Starter UFW op.
 ```
 sudo ufw enable
@@ -137,6 +138,35 @@ Indsætter IP og VirtualHost-navne.
 ```
 
 ## :large_blue_diamond: HTTPS
+Starter med at lave backup af den originale fil.
+```
+sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
+```
+```
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+```
+![https-default](images/https-default.png)
+### :small_blue_diamond: Redirect
+```
+sudo nano /etc/apache2/sites-available/biblioteket1.opgave.conf
+```
+![https-redirect](images/https-redirect.png)
+Aktivering af ændringer i Apache
+```
+sudo a2enmod ssl
+sudo a2enmod headers
+```
+```
+sudo a2ensite default-ssl
+```
+```
+sudo systemctl restart apache2
+```
+```
+sudo apache2ctl configtest
+
+Syntax OK
+```
 
 ## :large_blue_diamond: FTP
 
