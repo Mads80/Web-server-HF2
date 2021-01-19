@@ -245,7 +245,23 @@ sudo apt install mysql-server
  ```
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) CGI
-
+Starter med at aktivere CGI på serveren.
+```
+sudo a2enmod cgi
+```
+```
+sudo systemctl restart apache2
+```
+Som eksempel opretter jeg et lille perl script.
+```
+cd /usr/lib/cgi-bin
+sudo nano test.pl
+```
+Ændrer filens rettigheder.
+```
+chmod 755 /usr/lib/cgi-bin/test.pl
+```
+![cgi-perl](images/cgi-perl.png)
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) PHP
 ```
