@@ -142,6 +142,7 @@ Starter med at lave backup af den originale fil.
 ```
 sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
 ```
+Tilpasser filen med egen ServerName og DocumentRoot.
 ```
 sudo nano /etc/apache2/sites-available/default-ssl.conf
 ```
