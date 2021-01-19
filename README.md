@@ -12,6 +12,7 @@
 * [.htpasswd](#large_blue_diamond-htpasswd)
 * [MySQL](#large_blue_diamond-mysql)
 * [PHP](#large_blue_diamond-php)
+* [CGI](#large_blue_diamond-cgi)
 * [Wordpress](#large_blue_diamond-wordpress)
 	* [Download](#small_blue_diamond-download)
 	* [Konfiguration](#small_blue_diamond-konfiguration)
@@ -208,6 +209,9 @@ sudo apt install mysql-server
  ```
  exit
  ```
+
+## :large_blue_diamond: CGI
+
 
 ## :large_blue_diamond: PHP
 ```
