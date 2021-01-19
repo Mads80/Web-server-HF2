@@ -272,7 +272,7 @@ biblioteket2.opgave/info.php
 ```
 ![info-php](images/php-info.png)
 
-## :large_blue_diamond: Wordpress
+## [:large_blue_diamond:](##spider_web-web-server-hf2) Wordpress
 Starter med at logge ind i MySQL.
 ```
 mysql -u root -p
