@@ -146,6 +146,7 @@ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-availab
 sudo nano /etc/apache2/sites-available/default-ssl.conf
 ```
 ![https-default](images/https-default.png)
+
 Aktivering af ændringer i Apache
 ```
 sudo a2enmod ssl
