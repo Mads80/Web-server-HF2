@@ -23,7 +23,7 @@ Webserveren skal til start bestå af domænerne “biblioteket1.opgave”, “bi
 
 Webserveren bliver installeret på Ubuntu(Linux) og understøtter PHP/MySQL. Bibliotekets egne webudvikler har adgang via FTP skulle han ønske at uploade filer.
 
-Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt nemmere i denne sammenhæng. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
+Først downloader og installere jeg Ubuntu Desktop. Desktop er bare lidt smartere i denne sammenhæng, da det er nemmere at vise ting lokalt. Skulle web-serveren bruges i den virkelige verden var valget faldet på Ubuntu Server, men i denne sammenhæng gør det ingen forskel.
 
 
 ## :large_blue_diamond: Apache2
