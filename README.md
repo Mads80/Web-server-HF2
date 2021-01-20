@@ -243,6 +243,12 @@ sudo apt install mysql-server
  ```
  exit
  ```
+ ```
+sudo service status myqsl
+sudo service start mysql
+sudo service stop mysql
+ ```
+ ![mysql-status](images/mysql-status.png)
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) CGI
 Starter med at aktivere CGI på serveren.
