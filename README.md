@@ -181,6 +181,39 @@ Se status på csftpd.
 sudo systemctl status vsftpd
 ```
 ![vsftpd-status](images/vsftpd-status.png)
+Kopier og redigerer vsftpd.conf.
+```
+sudo cp /etc/vsftpd.conf vsftpd.conf.bck
+sudo nano /etc/vsftpd.conf
+```
+```
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+dirmessage_enable=YES
+use_localtime=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+chroot_local_user=YES
+secure_chroot_dir=/var/run/vsftpd/empty
+pam_service_name=vsftpd
+rsa_cert_file=/etc/ssl/private/vsftpd.pem
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+ssl_enable=YES
+user_sub_token=$USER
+local_root=/home/$USER/ftp
+pasv_min_port=30000
+pasv_max_port=31000
+userlist_enable=YES
+userlist_file=/etc/vsftpd.user_list
+userlist_deny=NO
+```
+Restart vsftpd service.
+```
+sudo systemctl restart vsftpd
+```
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) SSH
 Henter og installerer OpenSSH.
