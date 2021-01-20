@@ -181,6 +181,7 @@ Se status på csftpd.
 sudo systemctl status vsftpd
 ```
 ![vsftpd-status](images/vsftpd-status.png)
+<br/>
 Kopier og redigerer vsftpd.conf.
 ```
 sudo cp /etc/vsftpd.conf vsftpd.conf.bck
