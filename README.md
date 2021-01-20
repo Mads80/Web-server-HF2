@@ -172,7 +172,15 @@ sudo systemctl restart apache2
 ```
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) FTP
-
+```
+sudo apt update
+sudo apt install vsftpd
+```
+Se status på csftpd.
+```
+sudo systemctl status vsftpd
+```
+![vsftpd-status](images/vsftpd-status.png)
 
 ## [:large_blue_diamond:](#spider_web-web-server-hf2) SSH
 Henter og installerer OpenSSH.
