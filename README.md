@@ -176,7 +176,7 @@ sudo systemctl restart apache2
 sudo apt update
 sudo apt install vsftpd
 ```
-Se status på csftpd.
+Se status på vsftpd.
 ```
 sudo systemctl status vsftpd
 ```
