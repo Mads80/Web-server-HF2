@@ -1,4 +1,6 @@
-## :spider_web: Web-server-HF2 - Mads Finseth
+## :spider_web: Web-server-HF2
+
+Af Mads Finseth
 
 # Indholdsfortegnelse:
 * [Forord](#books-forord)
